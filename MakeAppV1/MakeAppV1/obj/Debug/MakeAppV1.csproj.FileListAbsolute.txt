@@ -1,0 +1,13 @@
+C:\Users\R_230_ROG\source\repos\MakeAppV1\MakeAppV1\bin\Debug\MakeAppV1.exe.config
+C:\Users\R_230_ROG\source\repos\MakeAppV1\MakeAppV1\bin\Debug\MakeAppV1.exe
+C:\Users\R_230_ROG\source\repos\MakeAppV1\MakeAppV1\bin\Debug\MakeAppV1.pdb
+C:\Users\R_230_ROG\source\repos\MakeAppV1\MakeAppV1\obj\Debug\MakeAppV1.csprojAssemblyReference.cache
+C:\Users\R_230_ROG\source\repos\MakeAppV1\MakeAppV1\obj\Debug\MakeAppV1.Main.resources
+C:\Users\R_230_ROG\source\repos\MakeAppV1\MakeAppV1\obj\Debug\MakeAppV1.Properties.Resources.resources
+C:\Users\R_230_ROG\source\repos\MakeAppV1\MakeAppV1\obj\Debug\MakeAppV1.csproj.GenerateResource.cache
+C:\Users\R_230_ROG\source\repos\MakeAppV1\MakeAppV1\obj\Debug\MakeAppV1.csproj.CoreCompileInputs.cache
+C:\Users\R_230_ROG\source\repos\MakeAppV1\MakeAppV1\obj\Debug\MakeAppV1.exe
+C:\Users\R_230_ROG\source\repos\MakeAppV1\MakeAppV1\obj\Debug\MakeAppV1.pdb
+C:\Users\R_230_ROG\source\repos\MakeAppV1\MakeAppV1\bin\Debug\Guna.UI.dll
+C:\Users\R_230_ROG\source\repos\MakeAppV1\MakeAppV1\obj\Debug\MakeAppV1.csproj.CopyComplete
+C:\Users\R_230_ROG\source\repos\MakeAppV1\MakeAppV1\obj\Debug\MakeAppV1.Icons.Fideles.resources
