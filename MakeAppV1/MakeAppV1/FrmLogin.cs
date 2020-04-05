@@ -21,6 +21,8 @@ namespace MakeAppV1
         {
             gunaTransition1.Hide(pnlConnexion);
             gunaTransition1.Show(pnlInscrire);
+
+            
         }
 
         private void gunaLinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
