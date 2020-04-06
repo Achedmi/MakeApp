@@ -30,5 +30,15 @@ namespace MakeAppV1
             gunaTransition1.Hide(pnlInscrire);
             gunaTransition1.Show(pnlConnexion);
         }
+
+        private void btnConnexion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInscrire_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

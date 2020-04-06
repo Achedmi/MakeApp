@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI.Animation.Animation animation1 = new Guna.UI.Animation.Animation();
+            Guna.UI.Animation.Animation animation3 = new Guna.UI.Animation.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.pnlConnexion = new System.Windows.Forms.Panel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
@@ -197,6 +197,7 @@
             this.btnConnexion.TabIndex = 5;
             this.btnConnexion.Text = "Connexion";
             this.btnConnexion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnConnexion.Click += new System.EventHandler(this.btnConnexion_Click);
             // 
             // pnlInscrire
             // 
@@ -270,6 +271,7 @@
             this.btnInscrire.TabIndex = 68;
             this.btnInscrire.Text = "Inscrire";
             this.btnInscrire.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnInscrire.Click += new System.EventHandler(this.btnInscrire_Click);
             // 
             // TxtPass_pnlInsc
             // 
@@ -393,7 +395,7 @@
             this.gunaLabel8.ForeColor = System.Drawing.Color.White;
             this.gunaLabel8.Location = new System.Drawing.Point(44, 218);
             this.gunaLabel8.Name = "gunaLabel8";
-            this.gunaLabel8.Size = new System.Drawing.Size(24, 15);
+            this.gunaLabel8.Size = new System.Drawing.Size(23, 15);
             this.gunaLabel8.TabIndex = 60;
             this.gunaLabel8.Text = "Tel";
             // 
@@ -425,22 +427,22 @@
             // 
             this.gunaTransition1.AnimationType = Guna.UI.Animation.AnimationType.Transparent;
             this.gunaTransition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 1F;
-            this.gunaTransition1.DefaultAnimation = animation1;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 1F;
+            this.gunaTransition1.DefaultAnimation = animation3;
             // 
             // FrmLogin
             // 

@@ -76,6 +76,7 @@ namespace MakeAppV1
             gunaCirclePictureBox4.Visible = false;
             gunaCirclePictureBox3.Visible = false;
             gunaCirclePictureBox2.Visible = true;
+            pnlProfil.Visible = false;
         }
 
         private void gunaAdvenceButton2_Click(object sender, EventArgs e)
@@ -83,6 +84,7 @@ namespace MakeAppV1
             gunaCirclePictureBox4.Visible = true;
             gunaCirclePictureBox3.Visible = false;
             gunaCirclePictureBox2.Visible = false;
+            pnlProfil.Visible = true;
         }
 
         private void gunaAdvenceButton3_Click(object sender, EventArgs e)
@@ -90,6 +92,17 @@ namespace MakeAppV1
             gunaCirclePictureBox4.Visible = false;
             gunaCirclePictureBox3.Visible = true;
             gunaCirclePictureBox2.Visible = false;
+            pnlProfil.Visible = false;
+        }
+
+        private void gunaAdvenceButton4_Click(object sender, EventArgs e)
+        {
+            this.pnlFull.Visible = true;
+        }
+
+        private void gunaAdvenceButton5_Click(object sender, EventArgs e)
+        {
+            this.pnlFull.Visible = false;
         }
     }
 }

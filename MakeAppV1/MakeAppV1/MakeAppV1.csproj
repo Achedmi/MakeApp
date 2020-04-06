@@ -106,5 +106,8 @@
   <ItemGroup>
     <None Include="Resources\different-cosmetics-types-scattered-pink-table_23-2148046897.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-844058816-170667a.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
