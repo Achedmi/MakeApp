@@ -97,12 +97,14 @@ namespace MakeAppV1
 
         private void gunaAdvenceButton4_Click(object sender, EventArgs e)
         {
+            Func.Animate(panel13, 7, 229);
             this.pnlFull.Visible = true;
         }
 
         private void gunaAdvenceButton5_Click(object sender, EventArgs e)
         {
             this.pnlFull.Visible = false;
+            Func.Animate(panel13, 7, 124);
         }
     }
 }

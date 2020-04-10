@@ -63,6 +63,7 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Func.cs" />
     <Compile Include="Icons\Fideles.cs">
       <SubType>UserControl</SubType>
     </Compile>
