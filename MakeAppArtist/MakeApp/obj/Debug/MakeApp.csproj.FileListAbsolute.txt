@@ -1,0 +1,13 @@
+c:\users\abdekrime\documents\visual studio 2012\Projects\MakeApp\MakeApp\bin\Debug\MakeApp.exe.config
+c:\users\abdekrime\documents\visual studio 2012\Projects\MakeApp\MakeApp\bin\Debug\MakeApp.exe
+c:\users\abdekrime\documents\visual studio 2012\Projects\MakeApp\MakeApp\bin\Debug\MakeApp.pdb
+c:\users\abdekrime\documents\visual studio 2012\Projects\MakeApp\MakeApp\bin\Debug\Guna.UI.dll
+c:\users\abdekrime\documents\visual studio 2012\Projects\MakeApp\MakeApp\obj\Debug\MakeApp.Form1.resources
+c:\users\abdekrime\documents\visual studio 2012\Projects\MakeApp\MakeApp\obj\Debug\MakeApp.Properties.Resources.resources
+c:\users\abdekrime\documents\visual studio 2012\Projects\MakeApp\MakeApp\obj\Debug\MakeApp.RDV.resources
+c:\users\abdekrime\documents\visual studio 2012\Projects\MakeApp\MakeApp\obj\Debug\MakeApp.csproj.GenerateResource.Cache
+c:\users\abdekrime\documents\visual studio 2012\Projects\MakeApp\MakeApp\obj\Debug\MakeApp.exe
+c:\users\abdekrime\documents\visual studio 2012\Projects\MakeApp\MakeApp\obj\Debug\MakeApp.pdb
+C:\Users\abdekrime\Documents\Visual Studio 2012\Projects\MakeAppArtist\MakeApp\bin\Debug\MakeApp.exe.config
+C:\Users\abdekrime\Documents\Visual Studio 2012\Projects\MakeAppArtist\MakeApp\obj\Debug\MakeApp.exe
+C:\Users\abdekrime\Documents\Visual Studio 2012\Projects\MakeAppArtist\MakeApp\obj\Debug\MakeApp.pdb

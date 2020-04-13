@@ -100,7 +100,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).BeginInit();
             this.gunaLinePanel5.SuspendLayout();
-            this.pnlHome.SuspendLayout();
             this.pnlProfil.SuspendLayout();
             this.panel13.SuspendLayout();
             this.gunaLinePanel14.SuspendLayout();
@@ -416,7 +415,6 @@
             // pnlHome
             // 
             this.pnlHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(233)))), ((int)(((byte)(224)))));
-            this.pnlHome.Controls.Add(this.pnlProfil);
             this.pnlHome.Location = new System.Drawing.Point(243, 102);
             this.pnlHome.Name = "pnlHome";
             this.pnlHome.Size = new System.Drawing.Size(1024, 564);
@@ -429,7 +427,7 @@
             this.pnlProfil.Controls.Add(this.pnlFull);
             this.pnlProfil.Controls.Add(this.panel7);
             this.pnlProfil.Controls.Add(this.panel5);
-            this.pnlProfil.Location = new System.Drawing.Point(0, 0);
+            this.pnlProfil.Location = new System.Drawing.Point(243, 102);
             this.pnlProfil.Name = "pnlProfil";
             this.pnlProfil.Size = new System.Drawing.Size(1024, 564);
             this.pnlProfil.TabIndex = 5;
@@ -504,7 +502,7 @@
             this.gunaLabel16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
             this.gunaLabel16.Location = new System.Drawing.Point(92, 183);
             this.gunaLabel16.Name = "gunaLabel16";
-            this.gunaLabel16.Size = new System.Drawing.Size(30, 21);
+            this.gunaLabel16.Size = new System.Drawing.Size(32, 21);
             this.gunaLabel16.TabIndex = 17;
             this.gunaLabel16.Text = "Tel";
             // 
@@ -594,7 +592,7 @@
             this.gunaLabel11.ForeColor = System.Drawing.Color.DarkGray;
             this.gunaLabel11.Location = new System.Drawing.Point(111, 42);
             this.gunaLabel11.Name = "gunaLabel11";
-            this.gunaLabel11.Size = new System.Drawing.Size(172, 15);
+            this.gunaLabel11.Size = new System.Drawing.Size(174, 15);
             this.gunaLabel11.TabIndex = 5;
             this.gunaLabel11.Text = "Vous n\'avez aucun rendez vous";
             // 
@@ -857,7 +855,7 @@
             this.gunaLabel4.ForeColor = System.Drawing.Color.DarkGray;
             this.gunaLabel4.Location = new System.Drawing.Point(111, 42);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(172, 15);
+            this.gunaLabel4.Size = new System.Drawing.Size(174, 15);
             this.gunaLabel4.TabIndex = 5;
             this.gunaLabel4.Text = "Vous n\'avez aucun rendez vous";
             // 
@@ -922,8 +920,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(226)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1267, 665);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlProfil);
             this.Controls.Add(this.pnlHome);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main";
@@ -938,7 +937,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).EndInit();
             this.gunaLinePanel5.ResumeLayout(false);
-            this.pnlHome.ResumeLayout(false);
             this.pnlProfil.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.gunaLinePanel14.ResumeLayout(false);
