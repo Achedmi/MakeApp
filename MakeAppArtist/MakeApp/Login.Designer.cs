@@ -110,10 +110,12 @@
             this.txtpaas_p1.ForeColor = System.Drawing.Color.White;
             this.txtpaas_p1.Location = new System.Drawing.Point(47, 197);
             this.txtpaas_p1.Name = "txtpaas_p1";
-            this.txtpaas_p1.PasswordChar = '\0';
+            this.txtpaas_p1.PasswordChar = '●';
             this.txtpaas_p1.Size = new System.Drawing.Size(260, 38);
             this.txtpaas_p1.TabIndex = 4;
             this.txtpaas_p1.TextOffsetX = 5;
+            this.txtpaas_p1.UseSystemPasswordChar = true;
+            this.txtpaas_p1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtpaas_p1_KeyPress);
             // 
             // gunaLabel4
             // 
@@ -159,6 +161,7 @@
             this.btnConnexion.TabIndex = 5;
             this.btnConnexion.Text = "Connexion";
             this.btnConnexion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnConnexion.Click += new System.EventHandler(this.btnConnexion_Click);
             // 
             // Login
             // 

@@ -51,6 +51,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="C.cs" />
     <Compile Include="FrmArtiste.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,11 +59,23 @@
       <DependentUpon>FrmArtiste.cs</DependentUpon>
     </Compile>
     <Compile Include="Func.cs" />
+    <Compile Include="Historique.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Historique.Designer.cs">
+      <DependentUpon>Historique.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NextRdv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NextRdv.Designer.cs">
+      <DependentUpon>NextRdv.cs</DependentUpon>
     </Compile>
     <Compile Include="Produits.cs">
       <SubType>UserControl</SubType>
@@ -81,8 +94,14 @@
     <EmbeddedResource Include="FrmArtiste.resx">
       <DependentUpon>FrmArtiste.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Historique.resx">
+      <DependentUpon>Historique.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NextRdv.resx">
+      <DependentUpon>NextRdv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Produits.resx">
       <DependentUpon>Produits.cs</DependentUpon>

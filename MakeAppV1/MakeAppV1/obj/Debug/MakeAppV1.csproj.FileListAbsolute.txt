@@ -23,7 +23,6 @@ C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppV1\MakeAppV1\bin\Debug\MakeAp
 C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppV1\MakeAppV1\bin\Debug\mscorlib.dll
 C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppV1\MakeAppV1\bin\Debug\System.Net.Http.dll
 C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppV1\MakeAppV1\bin\Debug\System.Net.Http.xml
-C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppV1\MakeAppV1\bin\Debug\fr\mscorlib.resources.dll
 C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppV1\MakeAppV1\bin\Debug\fr\System.Net.Http.resources.dll
 C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppV1\MakeAppV1\bin\Debug\normidna.nlp
 C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppV1\MakeAppV1\bin\Debug\normnfc.nlp

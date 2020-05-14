@@ -10,3 +10,18 @@ C:\Users\abdekrime\Documents\Visual Studio 2012\Projects\MakeAppArtist\MakeApp\o
 C:\Users\abdekrime\Documents\Visual Studio 2012\Projects\MakeAppArtist\MakeApp\obj\Debug\MakeAppArtist.csproj.GenerateResource.Cache
 C:\Users\abdekrime\Documents\Visual Studio 2012\Projects\MakeAppArtist\MakeApp\obj\Debug\MakeApp.exe
 C:\Users\abdekrime\Documents\Visual Studio 2012\Projects\MakeAppArtist\MakeApp\obj\Debug\MakeApp.pdb
+C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppArtist\MakeApp\bin\Debug\MakeApp.exe.config
+C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppArtist\MakeApp\obj\Debug\MakeApp.exe
+C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppArtist\MakeApp\obj\Debug\MakeApp.pdb
+C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppArtist\MakeApp\bin\Debug\MakeApp.exe
+C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppArtist\MakeApp\bin\Debug\MakeApp.pdb
+C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppArtist\MakeApp\bin\Debug\Guna.UI.dll
+C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppArtist\MakeApp\obj\Debug\MakeApp.FrmArtiste.resources
+C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppArtist\MakeApp\obj\Debug\MakeApp.Login.resources
+C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppArtist\MakeApp\obj\Debug\MakeApp.Produits.resources
+C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppArtist\MakeApp\obj\Debug\MakeApp.Properties.Resources.resources
+C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppArtist\MakeApp\obj\Debug\MakeApp.RDV.resources
+C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppArtist\MakeApp\obj\Debug\MakeAppArtist.csproj.GenerateResource.Cache
+C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppArtist\MakeApp\obj\Debug\MakeApp.NextRdv.resources
+C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppArtist\MakeApp\obj\Debug\MakeAppArtist.csprojResolveAssemblyReference.cache
+C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppArtist\MakeApp\obj\Debug\MakeApp.Historique.resources

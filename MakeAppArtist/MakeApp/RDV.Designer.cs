@@ -31,15 +31,14 @@
             this.components = new System.ComponentModel.Container();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
-            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaTransfarantPictureBox1 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.BtnPrendre = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.lblDesc = new Guna.UI.WinForms.GunaLabel();
+            this.lblHeur = new Guna.UI.WinForms.GunaLabel();
+            this.lblDate = new Guna.UI.WinForms.GunaLabel();
+            this.lblTel = new Guna.UI.WinForms.GunaLabel();
+            this.lblName = new Guna.UI.WinForms.GunaLabel();
+            this.gunaTransfarantPictureBox1 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -52,114 +51,20 @@
             // gunaPanel1
             // 
             this.gunaPanel1.BackColor = System.Drawing.Color.White;
+            this.gunaPanel1.Controls.Add(this.label1);
             this.gunaPanel1.Controls.Add(this.BtnPrendre);
-            this.gunaPanel1.Controls.Add(this.gunaLabel5);
-            this.gunaPanel1.Controls.Add(this.gunaLabel6);
-            this.gunaPanel1.Controls.Add(this.gunaLabel7);
-            this.gunaPanel1.Controls.Add(this.gunaLabel4);
-            this.gunaPanel1.Controls.Add(this.gunaLabel3);
-            this.gunaPanel1.Controls.Add(this.gunaLabel2);
-            this.gunaPanel1.Controls.Add(this.gunaLabel1);
+            this.gunaPanel1.Controls.Add(this.lblDesc);
+            this.gunaPanel1.Controls.Add(this.lblHeur);
+            this.gunaPanel1.Controls.Add(this.lblDate);
+            this.gunaPanel1.Controls.Add(this.lblTel);
+            this.gunaPanel1.Controls.Add(this.lblName);
             this.gunaPanel1.Controls.Add(this.gunaTransfarantPictureBox1);
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(832, 172);
             this.gunaPanel1.TabIndex = 0;
-            // 
-            // gunaLabel5
-            // 
-            this.gunaLabel5.AutoSize = true;
-            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
-            this.gunaLabel5.Location = new System.Drawing.Point(194, 100);
-            this.gunaLabel5.MaximumSize = new System.Drawing.Size(400, 0);
-            this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(127, 21);
-            this.gunaLabel5.TabIndex = 18;
-            this.gunaLabel5.Text = "DescriptionRdv";
-            // 
-            // gunaLabel6
-            // 
-            this.gunaLabel6.AutoSize = true;
-            this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
-            this.gunaLabel6.Location = new System.Drawing.Point(194, 76);
-            this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(76, 21);
-            this.gunaLabel6.TabIndex = 17;
-            this.gunaLabel6.Text = "HeurRdv";
-            // 
-            // gunaLabel7
-            // 
-            this.gunaLabel7.AutoSize = true;
-            this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
-            this.gunaLabel7.Location = new System.Drawing.Point(194, 53);
-            this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(75, 21);
-            this.gunaLabel7.TabIndex = 16;
-            this.gunaLabel7.Text = "DateRdv";
-            // 
-            // gunaLabel4
-            // 
-            this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
-            this.gunaLabel4.Location = new System.Drawing.Point(578, 100);
-            this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(69, 21);
-            this.gunaLabel4.TabIndex = 14;
-            this.gunaLabel4.Text = "Adresse";
-            this.gunaLabel4.Click += new System.EventHandler(this.gunaLabel4_Click);
-            // 
-            // gunaLabel3
-            // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
-            this.gunaLabel3.Location = new System.Drawing.Point(578, 53);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(124, 21);
-            this.gunaLabel3.TabIndex = 13;
-            this.gunaLabel3.Text = "Date naissance";
-            this.gunaLabel3.Click += new System.EventHandler(this.gunaLabel3_Click);
-            // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
-            this.gunaLabel2.Location = new System.Drawing.Point(578, 76);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(80, 21);
-            this.gunaLabel2.TabIndex = 12;
-            this.gunaLabel2.Text = "TEl client";
-            this.gunaLabel2.Click += new System.EventHandler(this.gunaLabel2_Click);
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
-            this.gunaLabel1.Location = new System.Drawing.Point(192, 15);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(168, 32);
-            this.gunaLabel1.TabIndex = 11;
-            this.gunaLabel1.Text = "Nom Prenom";
-            // 
-            // gunaTransfarantPictureBox1
-            // 
-            this.gunaTransfarantPictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTransfarantPictureBox1.BaseColor = System.Drawing.Color.Black;
-            this.gunaTransfarantPictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gunaTransfarantPictureBox1.Image = global::MakeApp.Properties.Resources.DefaultWomenPic;
-            this.gunaTransfarantPictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.gunaTransfarantPictureBox1.Name = "gunaTransfarantPictureBox1";
-            this.gunaTransfarantPictureBox1.Size = new System.Drawing.Size(159, 172);
-            this.gunaTransfarantPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaTransfarantPictureBox1.TabIndex = 10;
-            this.gunaTransfarantPictureBox1.TabStop = false;
+            this.gunaPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaPanel1_Paint);
             // 
             // BtnPrendre
             // 
@@ -195,6 +100,84 @@
             this.BtnPrendre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnPrendre.Click += new System.EventHandler(this.gunaAdvenceButton1_Click);
             // 
+            // lblDesc
+            // 
+            this.lblDesc.AutoSize = true;
+            this.lblDesc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
+            this.lblDesc.Location = new System.Drawing.Point(194, 91);
+            this.lblDesc.MaximumSize = new System.Drawing.Size(400, 0);
+            this.lblDesc.Name = "lblDesc";
+            this.lblDesc.Size = new System.Drawing.Size(127, 21);
+            this.lblDesc.TabIndex = 18;
+            this.lblDesc.Text = "DescriptionRdv";
+            // 
+            // lblHeur
+            // 
+            this.lblHeur.AutoSize = true;
+            this.lblHeur.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblHeur.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
+            this.lblHeur.Location = new System.Drawing.Point(603, 91);
+            this.lblHeur.Name = "lblHeur";
+            this.lblHeur.Size = new System.Drawing.Size(76, 21);
+            this.lblHeur.TabIndex = 17;
+            this.lblHeur.Text = "HeurRdv";
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
+            this.lblDate.Location = new System.Drawing.Point(194, 60);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(75, 21);
+            this.lblDate.TabIndex = 16;
+            this.lblDate.Text = "DateRdv";
+            // 
+            // lblTel
+            // 
+            this.lblTel.AutoSize = true;
+            this.lblTel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblTel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
+            this.lblTel.Location = new System.Drawing.Point(599, 60);
+            this.lblTel.Name = "lblTel";
+            this.lblTel.Size = new System.Drawing.Size(80, 21);
+            this.lblTel.TabIndex = 12;
+            this.lblTel.Text = "TEl client";
+            this.lblTel.Click += new System.EventHandler(this.gunaLabel2_Click);
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
+            this.lblName.Location = new System.Drawing.Point(192, 15);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(168, 32);
+            this.lblName.TabIndex = 11;
+            this.lblName.Text = "Nom Prenom";
+            // 
+            // gunaTransfarantPictureBox1
+            // 
+            this.gunaTransfarantPictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTransfarantPictureBox1.BaseColor = System.Drawing.Color.Black;
+            this.gunaTransfarantPictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gunaTransfarantPictureBox1.Image = global::MakeApp.Properties.Resources.DefaultWomenPic;
+            this.gunaTransfarantPictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.gunaTransfarantPictureBox1.Name = "gunaTransfarantPictureBox1";
+            this.gunaTransfarantPictureBox1.Size = new System.Drawing.Size(159, 172);
+            this.gunaTransfarantPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaTransfarantPictureBox1.TabIndex = 10;
+            this.gunaTransfarantPictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(195, 150);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 20;
+            // 
             // RDV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -215,15 +198,14 @@
 
         private Guna.UI.WinForms.GunaElipse gunaElipse1;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel4;
-        private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
-        private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaTransfarantPictureBox gunaTransfarantPictureBox1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel5;
-        private Guna.UI.WinForms.GunaLabel gunaLabel6;
-        private Guna.UI.WinForms.GunaLabel gunaLabel7;
-        private Guna.UI.WinForms.GunaAdvenceButton BtnPrendre;
+        public Guna.UI.WinForms.GunaLabel lblTel;
+        public Guna.UI.WinForms.GunaLabel lblName;
+        public Guna.UI.WinForms.GunaLabel lblDesc;
+        public Guna.UI.WinForms.GunaLabel lblHeur;
+        public Guna.UI.WinForms.GunaLabel lblDate;
+        public Guna.UI.WinForms.GunaAdvenceButton BtnPrendre;
+        public System.Windows.Forms.Label label1;
 
     }
 }

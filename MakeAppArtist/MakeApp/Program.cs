@@ -16,7 +16,7 @@ namespace MakeApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmArtiste());
+            Application.Run(new Login());
         }
     }
 }
