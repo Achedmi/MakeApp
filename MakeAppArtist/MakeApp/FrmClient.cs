@@ -20,18 +20,6 @@ namespace MakeApp
 
         private void FrmClient_Load(object sender, EventArgs e)
         {
-            C.DA = new SqlDataAdapter("select * from Marque", C.cn);
-            DataSet data = new DataSet();
-            C.DA.Fill(data, "Marque");
-            gunaComboBox1.DataSource = data.Tables[0];
-            gunaComboBox1.DisplayMember = "NomMarque";
-            gunaComboBox1.ValueMember = "idMarque";
-
-            gunaComboBox2.Items.Add("Jour");
-            gunaComboBox2.Items.Add("Soirée");
-            gunaComboBox2.Items.Add("Fête");
-            gunaComboBox2.Items.Add("Mariée");
-
             SqlCommand cmd = new SqlCommand("select TOP 3 ([Client].Nom + ' ' + Client.Prenom)as Name,  COUNT(*)as Total from Choisie inner join RDV on RDV.idRdv = Choisie.idRdv inner join Client on RDV.MailFrom = Client.Mail where Choisie.Finished = 1 and Choisie.choisie = 1 group by [Client].Nom + ' ' + Client.Prenom order by Total DESC", C.cn);
             if (C.cn.State == ConnectionState.Open)
             {
@@ -58,7 +46,6 @@ namespace MakeApp
                 panel4.Controls[2].Text = dr[1].ToString().Split(' ')[0];
                 panel4.Controls[0].Text = "0" + dr[2].ToString();
             }
-            dr.Close();
             //profile
 
             lblPrenom.Text = C.user1.Prenom;
@@ -101,21 +88,6 @@ namespace MakeApp
         {
             Func.Animate(panel13, 7, 229);
             this.pnlFull.Visible = true;
-        }
-
-        private void gunaAdvenceButton3_Click(object sender, EventArgs e)
-        {
-            SqlCommand command = new SqlCommand("insert into RDV values('"+ gunaDateTimePicker1.Value + "', '"+ gunaTextBox1.Text.ToString()+ "' , '"+ richTextBox1.Text.ToString() + "', '"+C.user1.Mail+"', '"+ gunaComboBox1.SelectedValue + "', '"+ gunaComboBox2.SelectedItem.ToString() + "')", C.cn);
-            C.cn.Open();
-            command.ExecuteNonQuery();
-            C.cn.Close();
-            gunaLabel30.Visible = true;
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (gunaLabel30.Visible == true)
-                gunaLabel30.Visible = false;
         }
     }
 }

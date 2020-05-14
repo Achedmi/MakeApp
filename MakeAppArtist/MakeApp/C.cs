@@ -15,7 +15,6 @@ namespace MakeApp
 
         public static FrmArtiste frmAr = new FrmArtiste();
         public static FrmClient FrmClient = new FrmClient();
-        public static SqlDataAdapter DA = new SqlDataAdapter();
     }
 
     class Users

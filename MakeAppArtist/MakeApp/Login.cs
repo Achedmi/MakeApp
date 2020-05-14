@@ -54,16 +54,10 @@ namespace MakeApp
 
 
                     C.user1.setdata(dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), Convert.ToInt32(dr[3].ToString()), dr[4].ToString(), Convert.ToInt16(dr[6].ToString()));
-                    if (C.user1.Type == 1)//Type = [0, 1, 2] // 0 = Admin; 1 = Artiste; 2 = Client;
-                    {
-                        dr.Close();
+                    if (C.user1.Type == 1) //Type = [0, 1, 2] // 0 = Admin; 1 = Artiste; 2 = Client;
                         C.frmAr.Show();
-                    }
                     else if (C.user1.Type == 2)
-                    {
-                        dr.Close();
                         C.FrmClient.Show();
-                    }
 
                     C.cn.Close();
                     this.Hide();
@@ -72,7 +66,6 @@ namespace MakeApp
             }
             MessageBox.Show("Introuvable");
             C.cn.Close();
-            
         }
 
         private void txtpaas_p1_KeyPress(object sender, KeyPressEventArgs e)
