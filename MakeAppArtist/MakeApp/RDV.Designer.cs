@@ -198,7 +198,6 @@
 
         private Guna.UI.WinForms.GunaElipse gunaElipse1;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
-        private Guna.UI.WinForms.GunaTransfarantPictureBox gunaTransfarantPictureBox1;
         public Guna.UI.WinForms.GunaLabel lblTel;
         public Guna.UI.WinForms.GunaLabel lblName;
         public Guna.UI.WinForms.GunaLabel lblDesc;
@@ -206,6 +205,7 @@
         public Guna.UI.WinForms.GunaLabel lblDate;
         public Guna.UI.WinForms.GunaAdvenceButton BtnPrendre;
         public System.Windows.Forms.Label label1;
+        public Guna.UI.WinForms.GunaTransfarantPictureBox gunaTransfarantPictureBox1;
 
     }
 }

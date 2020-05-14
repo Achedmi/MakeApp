@@ -117,6 +117,6 @@
         public Guna.UI.WinForms.GunaLabel lblHeur;
         public Guna.UI.WinForms.GunaLabel lblDate;
         public Guna.UI.WinForms.GunaLabel lblName;
-        private Guna.UI.WinForms.GunaTransfarantPictureBox gunaTransfarantPictureBox1;
+        public Guna.UI.WinForms.GunaTransfarantPictureBox gunaTransfarantPictureBox1;
     }
 }

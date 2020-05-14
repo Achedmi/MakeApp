@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace MakeApp
 {
@@ -26,7 +27,6 @@ namespace MakeApp
             gunaCirclePictureBox2.Visible = true;
             pnlProfil.Visible = false;
             gunaVScrollBar1.Show();
-            gunaVScrollBar2.Hide();
         }
 
         private void gunaAdvenceButton2_Click(object sender, EventArgs e)
@@ -36,7 +36,6 @@ namespace MakeApp
             gunaCirclePictureBox2.Visible = false;
             pnlProfil.Visible = true;
             gunaVScrollBar1.Hide();
-            gunaVScrollBar2.Show();
         }
 
         private void gunaAdvenceButton3_Click(object sender, EventArgs e)
@@ -54,31 +53,50 @@ namespace MakeApp
            
                 vScrollHelper2 = new Guna.UI.Lib.ScrollBar.PanelScrollHelper(pnlHome, gunaVScrollBar1, true);
                 vScrollHelper2 = new Guna.UI.Lib.ScrollBar.PanelScrollHelper(panel7, gunaVScrollBar2, true);
+
+
             
+                 for (int x = pnlHome.Controls.Count - 1; x >=2 ; x--)
+                 {
+                     pnlHome.Controls.RemoveAt(x);
+                 }
+                 for (int x = panel13.Controls.Count - 1; x >= 1; x--)
+                 {
+                     panel13.Controls.RemoveAt(x);
+                 }
+                 for (int x = panel7.Controls.Count-1 ; x >= 1; x--)
+                 {
+                     panel7.Controls.RemoveAt(x);
+                 }
 
-           /* for (int x = pnlHome.Controls.Count - 1; x >=2 ; x--)
-            {
-                pnlHome.Controls.RemoveAt(x);
-            }
-            for (int x = 1; x < panel13.Controls.Count; x++)
-            {
-                panel13.Controls.RemoveAt(x);
-            }
-            for (int x = 1; x < panel7.Controls.Count; x++)
-            {
-                panel7.Controls.RemoveAt(x);
-            }*/
+                //Accueil
 
-            //Accueil
-
-            SqlCommand cmd = new SqlCommand("select TOP 3 ([Client].Nom + ' ' + Client.Prenom)as Name,  COUNT(*)as Total from Choisie inner join RDV on RDV.idRdv = Choisie.idRdv inner join Client on RDV.MailFrom = Client.Mail where Choisie.Finished = 1 and Choisie.choisie = 1 group by [Client].Nom + ' ' + Client.Prenom order by Total DESC", C.cn);
+            List<int> lstIdRdvPerimes = new List<int>();
+            lstIdRdvPerimes.Clear();
+            SqlCommand cmd = new SqlCommand("select idRdv,DateRdv,HeurRdv from rdv", C.cn);
             if (C.cn.State == ConnectionState.Open)
             {
                 C.cn.Close();
             }
             C.cn.Open();
-
             SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                if (DateTime.Compare(DateTime.Now, Convert.ToDateTime(dr[1].ToString().Split(' ')[0] + " " + dr[2].ToString())) == 1)
+                {
+                    lstIdRdvPerimes.Add(Convert.ToInt16(dr[0].ToString()));
+                }
+            }
+
+            dr.Close();
+            for (int x = 0; x < lstIdRdvPerimes.Count; x++)
+            {
+                SqlCommand cmd2 = new SqlCommand("update Choisie set Finished = 1 where idRdv = " + lstIdRdvPerimes[x], C.cn);
+                cmd2.ExecuteNonQuery();
+            }
+
+             cmd = new SqlCommand("select TOP 3 ([Account].Nom + ' ' + Account.Prenom)as Name,  COUNT(*)as Total from Choisie inner join RDV on RDV.idRdv = Choisie.idRdv inner join Account on RDV.MailFrom = Account.Mail where Choisie.Finished = 1  group by [Account].Nom + ' ' + Account.Prenom order by Total DESC", C.cn);
+             dr = cmd.ExecuteReader();
             int i = 1,j = 2;
             while (dr.Read())
             {
@@ -88,7 +106,7 @@ namespace MakeApp
                 j += 2;
             }
 
-            cmd = new SqlCommand("select Top 1 Client.Nom + ' ' +Client.Prenom,DateRdv,Client.Tel from RDV inner join Client on Client.Mail = RDV.MailFrom order by DAteRdv desc  ", C.cn);
+            cmd = new SqlCommand("select Top 1 Account.Nom + ' ' +Account.Prenom,DateRdv,Account.Tel from RDV inner join Account on Account.Mail = RDV.MailFrom order by DAteRdv desc  ", C.cn);
             dr.Close();
             dr = cmd.ExecuteReader();
             while (dr.Read())
@@ -100,7 +118,7 @@ namespace MakeApp
 
 
 
-            cmd = new SqlCommand("select Nom + ' ' +Prenom , DateRdv ,Client.Tel,DescriptionRdv ,HeurRdv ,Choisie.mailArtist,RDV.idRdv from RDV inner join Client on Client.Mail = rdv.MailFrom left join choisie on Choisie.idrdv = RDV.idRdv  where RDV.idRdv not in (select idRdv from Choisie where Choisie = 1 or finished = 1)", C.cn);
+            cmd = new SqlCommand("select Nom + ' ' +Prenom , DateRdv ,Account.Tel,DescriptionRdv ,HeurRdv ,Choisie.mailArtist,RDV.idRdv,account.img from RDV inner join Account on Account.Mail = rdv.MailFrom left join choisie on Choisie.idrdv = RDV.idRdv  where RDV.idRdv not in (select Choisie.idRdv  from Choisie) order by DateRdv desc", C.cn);
             dr.Close();
             dr = cmd.ExecuteReader();
             while (dr.Read())
@@ -113,10 +131,13 @@ namespace MakeApp
                 rdv.lblHeur.Text = dr[4].ToString().Substring(0,5);
                 rdv.label1.Text = dr[6].ToString();
                 rdv.Location = new Point(101, pnlHome.Controls[pnlHome.Controls.Count-1].Location.Y + pnlHome.Controls[pnlHome.Controls.Count-1].Size.Height+20);
-                if (dr[5].ToString() == C.user1.Mail)
-                    rdv.BtnPrendre.Text = "Annuler";
-                else
-                    rdv.BtnPrendre.Text = "Prendre";
+
+                if (dr[7].ToString() != "")
+                {
+                    byte[] img = (byte[])(dr[7]);
+                    MemoryStream ms = new MemoryStream(img);
+                    rdv.gunaTransfarantPictureBox1.Image = Image.FromStream(ms);
+                }
 
                 pnlHome.Controls.Add(rdv);
             }
@@ -139,7 +160,7 @@ namespace MakeApp
             lblUserName.Text = "Hello " + C.user1.Prenom + " !";
             gunaLabel28.Text = "Hello " + C.user1.Prenom + " !";
 
-            cmd = new SqlCommand("select COUNT(*) from Choisie where MailArtist= '"+C.user1.Mail+"' and Finished = 0 and choisie = 1", C.cn);
+            cmd = new SqlCommand("select COUNT(*) from Choisie where MailArtist= '"+C.user1.Mail+"' and Finished = 0", C.cn);
             cmd.Parameters.AddWithValue("@a",C.user1.Mail);
             if (C.cn.State == ConnectionState.Open)
             {
@@ -150,7 +171,7 @@ namespace MakeApp
             gunaLabel27.Text = "Vous avez " + cmd.ExecuteScalar().ToString() + " rendez vous";
 
 
-            cmd = new SqlCommand("select Client.Prenom+ ' '+ Client.Nom , DateRdv ,HeurRdv  from Choisie   inner join RDV on RDV.idRdv = Choisie.idrdv inner join Client on Client.Mail = rdv.MailFrom  where MailArtist= 'houda@houda.com' and Finished = 0 and choisie = 1 order by DateRdv asc", C.cn);
+            cmd = new SqlCommand("select Account.Prenom+ ' '+ Account.Nom , DateRdv ,HeurRdv  from Choisie   inner join RDV on RDV.idRdv = Choisie.idrdv inner join Account on Account.Mail = rdv.MailFrom  where MailArtist= '"+C.user1.Mail+"' and Finished = 0 order by DateRdv asc", C.cn);
             dr.Close();
             dr = cmd.ExecuteReader();
             while (dr.Read())
@@ -164,20 +185,23 @@ namespace MakeApp
             }
 
 
-            cmd = new SqlCommand("select  Nom + ' ' +Prenom , DateRdv ,Client.Tel,DescriptionRdv ,HeurRdv ,Choisie.mailArtist from RDV inner join Client on Client.Mail = rdv.MailFrom left join choisie on Choisie.idrdv = RDV.idRdv  where RDV.idRdv in (select idRdv from Choisie where Choisie = 1 and finished = 1)", C.cn);
+            cmd = new SqlCommand("select  Nom + ' ' +Prenom , DateRdv ,Account.Tel,DescriptionRdv ,HeurRdv ,Choisie.mailArtist,account.img from RDV inner join Account on Account.Mail = rdv.MailFrom left join choisie on Choisie.idrdv = RDV.idRdv  where RDV.idRdv in (select idRdv from Choisie where finished = 1) and mailartist = '"+C.user1.Mail+"'", C.cn);
             dr.Close();
             dr = cmd.ExecuteReader();
             while (dr.Read())
-            {
-                if (dr[5].ToString() == C.user1.Mail)
+            {                
+                Historique rdv = new Historique();
+                rdv.lblName.Text = dr[0].ToString();
+                rdv.lblDate.Text = dr[1].ToString().Split(' ')[0];
+                rdv.lblHeur.Text = dr[4].ToString().Substring(0, 5);
+                rdv.Location = new Point(10, panel7.Controls[panel7.Controls.Count - 1].Location.Y + panel7.Controls[panel7.Controls.Count - 1].Size.Height);                
+                if (dr[6].ToString() != "")
                 {
-                    Historique rdv = new Historique();
-                    rdv.lblName.Text = dr[0].ToString();
-                    rdv.lblDate.Text = dr[1].ToString().Split(' ')[0];
-                    rdv.lblHeur.Text = dr[4].ToString().Substring(0, 5);
-                    rdv.Location = new Point(10, panel7.Controls[panel7.Controls.Count - 1].Location.Y + panel7.Controls[panel7.Controls.Count - 1].Size.Height);
-                    panel7.Controls.Add(rdv);
+                    byte[] img = (byte[])(dr[6]);
+                    MemoryStream ms = new MemoryStream(img);
+                    rdv.gunaTransfarantPictureBox1.Image = Image.FromStream(ms);       
                 }
+                panel7.Controls.Add(rdv);
             }
 
 

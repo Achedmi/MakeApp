@@ -49,17 +49,14 @@ namespace MakeApp
             }
             C.cn.Open();
 
-            if (BtnPrendre.Text == "Prendre")
-                cmd = new SqlCommand("insert choisie values (@a,@b,0,0)", C.cn);
-            else
-                cmd = new SqlCommand("delete from choisie where idrdv = @a and mailartist = @b", C.cn);
+            cmd = new SqlCommand("insert choisie values (@a,@b,0)", C.cn);
 
             cmd.Parameters.Add("@a", label1.Text);
             cmd.Parameters.Add("@b", C.user1.Mail);
 
             cmd.ExecuteNonQuery();
-
-            BtnPrendre.Text = BtnPrendre.Text == "Prendre" ? "Annuler" : "Prendre";
+            C.frmAr.FrmArtiste_Load_1(sender,e);
+            BtnPrendre.Enabled = false;
             C.cn.Close();            
 
         }

@@ -45,3 +45,7 @@ C:\Users\R_230_ROG\Documents\Projet_StageLast_update\MakeApp\MakeAppArtist\MakeA
 C:\Users\R_230_ROG\Documents\Projet_StageLast_update\MakeApp\MakeAppArtist\MakeApp\bin\Debug\FrmArtiste.cs
 C:\Users\R_230_ROG\Documents\Projet_StageLast_update\MakeApp\MakeAppArtist\MakeApp\bin\Debug\FrmArtiste.Designer.cs
 C:\Users\R_230_ROG\Documents\Projet_StageLast_update\MakeApp\MakeAppArtist\MakeApp\obj\Debug\MakeApp.FrmClient.resources
+C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppArtist\MakeApp\bin\Debug\FrmArtiste.resx
+C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppArtist\MakeApp\bin\Debug\FrmArtiste.cs
+C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppArtist\MakeApp\bin\Debug\FrmArtiste.Designer.cs
+C:\Users\abdekrime\Documents\GitHub\MakeApp\MakeAppArtist\MakeApp\obj\Debug\MakeApp.FrmClient.resources
