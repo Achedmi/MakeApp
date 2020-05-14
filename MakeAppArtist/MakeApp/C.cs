@@ -14,6 +14,7 @@ namespace MakeApp
         public static Users user1 = new Users();
 
         public static FrmArtiste frmAr = new FrmArtiste();
+        public static FrmClient FrmClient = new FrmClient();
     }
 
     class Users
@@ -21,16 +22,16 @@ namespace MakeApp
 
         public string Prenom, Nom, Mail, Mot_de_pass;        
         public Int32 NumTel;
-        int Admin;
+        public int Type;
 
-        public void setdata(string prenom, string nom, string mail, int numtel, string mot_de_pass, int Admin)
+        public void setdata(string prenom, string nom, string mail, int numtel, string mot_de_pass, int type)
         {            
             this.Prenom = prenom;
             this.Nom = nom;
             this.Mail = mail;
             this.Mot_de_pass = mot_de_pass;            
             this.NumTel = numtel;
-            this.Admin = Admin;
+            this.Type = type;
         }
 
     }

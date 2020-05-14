@@ -54,9 +54,17 @@
     <Compile Include="C.cs" />
     <Compile Include="FrmArtiste.cs">
       <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="FrmArtiste.Designer.cs">
       <DependentUpon>FrmArtiste.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="FrmClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClient.Designer.cs">
+      <DependentUpon>FrmClient.cs</DependentUpon>
     </Compile>
     <Compile Include="Func.cs" />
     <Compile Include="Historique.cs">
@@ -93,6 +101,10 @@
     </Compile>
     <EmbeddedResource Include="FrmArtiste.resx">
       <DependentUpon>FrmArtiste.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClient.resx">
+      <DependentUpon>FrmClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Historique.resx">
       <DependentUpon>Historique.cs</DependentUpon>

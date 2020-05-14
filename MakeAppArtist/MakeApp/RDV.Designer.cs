@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.BtnPrendre = new Guna.UI.WinForms.GunaAdvenceButton();
             this.lblDesc = new Guna.UI.WinForms.GunaLabel();
             this.lblHeur = new Guna.UI.WinForms.GunaLabel();
@@ -38,7 +39,6 @@
             this.lblTel = new Guna.UI.WinForms.GunaLabel();
             this.lblName = new Guna.UI.WinForms.GunaLabel();
             this.gunaTransfarantPictureBox1 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -65,6 +65,14 @@
             this.gunaPanel1.Size = new System.Drawing.Size(832, 172);
             this.gunaPanel1.TabIndex = 0;
             this.gunaPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaPanel1_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(195, 150);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 20;
             // 
             // BtnPrendre
             // 
@@ -169,14 +177,6 @@
             this.gunaTransfarantPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaTransfarantPictureBox1.TabIndex = 10;
             this.gunaTransfarantPictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(195, 150);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 20;
             // 
             // RDV
             // 

@@ -139,7 +139,7 @@ namespace MakeApp
             lblUserName.Text = "Hello " + C.user1.Prenom + " !";
             gunaLabel28.Text = "Hello " + C.user1.Prenom + " !";
 
-            cmd = new SqlCommand("select COUNT(*) from Choisie where MailArtist= 'houda@houda.com' and Finished = 0 and choisie = 1", C.cn);
+            cmd = new SqlCommand("select COUNT(*) from Choisie where MailArtist= '"+C.user1.Mail+"' and Finished = 0 and choisie = 1", C.cn);
             cmd.Parameters.AddWithValue("@a",C.user1.Mail);
             if (C.cn.State == ConnectionState.Open)
             {

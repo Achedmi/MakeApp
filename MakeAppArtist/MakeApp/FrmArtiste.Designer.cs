@@ -36,6 +36,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.gunaLinePanel7 = new Guna.UI.WinForms.GunaLinePanel();
             this.gunaLinePanel8 = new Guna.UI.WinForms.GunaLinePanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gunaCirclePictureBox4 = new Guna.UI.WinForms.GunaCirclePictureBox();
+            this.gunaCirclePictureBox2 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaAdvenceButton2 = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -69,6 +72,7 @@
             this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipse3 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.pnlProfil = new System.Windows.Forms.Panel();
+            this.gunaVScrollBar2 = new Guna.UI.WinForms.GunaVScrollBar();
             this.panel13 = new System.Windows.Forms.Panel();
             this.gunaLabel17 = new Guna.UI.WinForms.GunaLabel();
             this.pnlFull = new System.Windows.Forms.Panel();
@@ -83,6 +87,7 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.gunaLinePanel19 = new Guna.UI.WinForms.GunaLinePanel();
             this.lblUserName = new Guna.UI.WinForms.GunaLabel();
+            this.gunaCirclePictureBox5 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.gunaLabel23 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel24 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel25 = new Guna.UI.WinForms.GunaLabel();
@@ -94,6 +99,7 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.gunaLinePanel11 = new Guna.UI.WinForms.GunaLinePanel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.gunaLabel18 = new Guna.UI.WinForms.GunaLabel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.gunaAdvenceButton4 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaLabel27 = new Guna.UI.WinForms.GunaLabel();
@@ -101,17 +107,14 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.gunaLinePanel20 = new Guna.UI.WinForms.GunaLinePanel();
             this.gunaLabel28 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaVScrollBar2 = new Guna.UI.WinForms.GunaVScrollBar();
-            this.gunaLabel18 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaCirclePictureBox5 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.gunaCirclePictureBox4 = new Guna.UI.WinForms.GunaCirclePictureBox();
-            this.gunaCirclePictureBox2 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.pnlTop.SuspendLayout();
             this.gunaLinePanel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.gunaLinePanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).BeginInit();
             this.gunaLinePanel5.SuspendLayout();
             this.gunaLinePanel1.SuspendLayout();
             this.pnlHome.SuspendLayout();
@@ -124,16 +127,13 @@
             this.pnlFull.SuspendLayout();
             this.panel9.SuspendLayout();
             this.gunaLinePanel18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox5)).BeginInit();
             this.gunaLinePanel16.SuspendLayout();
             this.gunaLinePanel10.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.gunaLinePanel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlTop
@@ -208,6 +208,40 @@
             this.gunaLinePanel8.Name = "gunaLinePanel8";
             this.gunaLinePanel8.Size = new System.Drawing.Size(100, 1);
             this.gunaLinePanel8.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(63, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(120, 120);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // gunaCirclePictureBox4
+            // 
+            this.gunaCirclePictureBox4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(204)))), ((int)(((byte)(223)))));
+            this.gunaCirclePictureBox4.Location = new System.Drawing.Point(18, 231);
+            this.gunaCirclePictureBox4.Name = "gunaCirclePictureBox4";
+            this.gunaCirclePictureBox4.Size = new System.Drawing.Size(15, 15);
+            this.gunaCirclePictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaCirclePictureBox4.TabIndex = 14;
+            this.gunaCirclePictureBox4.TabStop = false;
+            this.gunaCirclePictureBox4.UseTransfarantBackground = false;
+            this.gunaCirclePictureBox4.Visible = false;
+            // 
+            // gunaCirclePictureBox2
+            // 
+            this.gunaCirclePictureBox2.BackColor = System.Drawing.Color.White;
+            this.gunaCirclePictureBox2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(204)))), ((int)(((byte)(223)))));
+            this.gunaCirclePictureBox2.Location = new System.Drawing.Point(18, 182);
+            this.gunaCirclePictureBox2.Name = "gunaCirclePictureBox2";
+            this.gunaCirclePictureBox2.Size = new System.Drawing.Size(15, 15);
+            this.gunaCirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaCirclePictureBox2.TabIndex = 12;
+            this.gunaCirclePictureBox2.TabStop = false;
+            this.gunaCirclePictureBox2.UseTransfarantBackground = false;
             // 
             // gunaLabel3
             // 
@@ -413,7 +447,7 @@
             this.gunaLabel16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
             this.gunaLabel16.Location = new System.Drawing.Point(9, 100);
             this.gunaLabel16.Name = "gunaLabel16";
-            this.gunaLabel16.Size = new System.Drawing.Size(41, 21);
+            this.gunaLabel16.Size = new System.Drawing.Size(40, 21);
             this.gunaLabel16.TabIndex = 43;
             this.gunaLabel16.Text = "Tel :";
             // 
@@ -435,7 +469,7 @@
             this.gunaLabel14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
             this.gunaLabel14.Location = new System.Drawing.Point(9, 74);
             this.gunaLabel14.Name = "gunaLabel14";
-            this.gunaLabel14.Size = new System.Drawing.Size(149, 21);
+            this.gunaLabel14.Size = new System.Drawing.Size(148, 21);
             this.gunaLabel14.TabIndex = 41;
             this.gunaLabel14.Text = "Date RendezVouz:";
             // 
@@ -468,7 +502,7 @@
             this.gunaLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
             this.gunaLabel10.Location = new System.Drawing.Point(6, 7);
             this.gunaLabel10.Name = "gunaLabel10";
-            this.gunaLabel10.Size = new System.Drawing.Size(285, 37);
+            this.gunaLabel10.Size = new System.Drawing.Size(282, 37);
             this.gunaLabel10.TabIndex = 38;
             this.gunaLabel10.Text = "Dernier RendezVouz:";
             // 
@@ -508,7 +542,7 @@
             this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
             this.gunaLabel1.Location = new System.Drawing.Point(24, 8);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(175, 37);
+            this.gunaLabel1.Size = new System.Drawing.Size(173, 37);
             this.gunaLabel1.TabIndex = 0;
             this.gunaLabel1.Text = "Top Clients :";
             // 
@@ -615,6 +649,19 @@
             this.pnlProfil.TabIndex = 9;
             this.pnlProfil.Visible = false;
             // 
+            // gunaVScrollBar2
+            // 
+            this.gunaVScrollBar2.LargeChange = 10;
+            this.gunaVScrollBar2.Location = new System.Drawing.Point(1009, 157);
+            this.gunaVScrollBar2.Maximum = 100;
+            this.gunaVScrollBar2.Name = "gunaVScrollBar2";
+            this.gunaVScrollBar2.ScrollIdleColor = System.Drawing.Color.White;
+            this.gunaVScrollBar2.Size = new System.Drawing.Size(10, 200);
+            this.gunaVScrollBar2.TabIndex = 9;
+            this.gunaVScrollBar2.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(204)))), ((int)(((byte)(223)))));
+            this.gunaVScrollBar2.ThumbHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(204)))), ((int)(((byte)(223)))));
+            this.gunaVScrollBar2.ThumbPressedColor = System.Drawing.Color.SkyBlue;
+            // 
             // panel13
             // 
             this.panel13.AutoScroll = true;
@@ -632,9 +679,9 @@
             this.gunaLabel17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
             this.gunaLabel17.Location = new System.Drawing.Point(3, 15);
             this.gunaLabel17.Name = "gunaLabel17";
-            this.gunaLabel17.Size = new System.Drawing.Size(220, 21);
+            this.gunaLabel17.Size = new System.Drawing.Size(210, 21);
             this.gunaLabel17.TabIndex = 5;
-            this.gunaLabel17.Text = "Vos Rendez-vous prochaine :";
+            this.gunaLabel17.Text = "Vos prochain Rendez-vous :";
             // 
             // pnlFull
             // 
@@ -753,7 +800,7 @@
             this.lblNbrRdv.ForeColor = System.Drawing.Color.DarkGray;
             this.lblNbrRdv.Location = new System.Drawing.Point(111, 42);
             this.lblNbrRdv.Name = "lblNbrRdv";
-            this.lblNbrRdv.Size = new System.Drawing.Size(174, 15);
+            this.lblNbrRdv.Size = new System.Drawing.Size(172, 15);
             this.lblNbrRdv.TabIndex = 5;
             this.lblNbrRdv.Text = "Vous n\'avez aucun rendez vous";
             // 
@@ -799,6 +846,17 @@
             this.lblUserName.Size = new System.Drawing.Size(135, 21);
             this.lblUserName.TabIndex = 1;
             this.lblUserName.Text = "Hello Username !";
+            // 
+            // gunaCirclePictureBox5
+            // 
+            this.gunaCirclePictureBox5.BaseColor = System.Drawing.Color.White;
+            this.gunaCirclePictureBox5.Location = new System.Drawing.Point(11, 10);
+            this.gunaCirclePictureBox5.Name = "gunaCirclePictureBox5";
+            this.gunaCirclePictureBox5.Size = new System.Drawing.Size(80, 80);
+            this.gunaCirclePictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaCirclePictureBox5.TabIndex = 0;
+            this.gunaCirclePictureBox5.TabStop = false;
+            this.gunaCirclePictureBox5.UseTransfarantBackground = false;
             // 
             // gunaLabel23
             // 
@@ -918,6 +976,17 @@
             this.panel7.Size = new System.Drawing.Size(673, 534);
             this.panel7.TabIndex = 6;
             // 
+            // gunaLabel18
+            // 
+            this.gunaLabel18.AutoSize = true;
+            this.gunaLabel18.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
+            this.gunaLabel18.Location = new System.Drawing.Point(13, 15);
+            this.gunaLabel18.Name = "gunaLabel18";
+            this.gunaLabel18.Size = new System.Drawing.Size(95, 21);
+            this.gunaLabel18.TabIndex = 2;
+            this.gunaLabel18.Text = "Historique :";
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
@@ -971,7 +1040,7 @@
             this.gunaLabel27.ForeColor = System.Drawing.Color.DarkGray;
             this.gunaLabel27.Location = new System.Drawing.Point(111, 42);
             this.gunaLabel27.Name = "gunaLabel27";
-            this.gunaLabel27.Size = new System.Drawing.Size(174, 15);
+            this.gunaLabel27.Size = new System.Drawing.Size(172, 15);
             this.gunaLabel27.TabIndex = 5;
             this.gunaLabel27.Text = "Vous n\'avez aucun rendez vous";
             // 
@@ -1018,41 +1087,6 @@
             this.gunaLabel28.TabIndex = 1;
             this.gunaLabel28.Text = "Hello Username !";
             // 
-            // gunaVScrollBar2
-            // 
-            this.gunaVScrollBar2.LargeChange = 10;
-            this.gunaVScrollBar2.Location = new System.Drawing.Point(1009, 157);
-            this.gunaVScrollBar2.Maximum = 100;
-            this.gunaVScrollBar2.Name = "gunaVScrollBar2";
-            this.gunaVScrollBar2.ScrollIdleColor = System.Drawing.Color.White;
-            this.gunaVScrollBar2.Size = new System.Drawing.Size(10, 200);
-            this.gunaVScrollBar2.TabIndex = 9;
-            this.gunaVScrollBar2.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(204)))), ((int)(((byte)(223)))));
-            this.gunaVScrollBar2.ThumbHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(204)))), ((int)(((byte)(223)))));
-            this.gunaVScrollBar2.ThumbPressedColor = System.Drawing.Color.SkyBlue;
-            // 
-            // gunaLabel18
-            // 
-            this.gunaLabel18.AutoSize = true;
-            this.gunaLabel18.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
-            this.gunaLabel18.Location = new System.Drawing.Point(13, 15);
-            this.gunaLabel18.Name = "gunaLabel18";
-            this.gunaLabel18.Size = new System.Drawing.Size(95, 21);
-            this.gunaLabel18.TabIndex = 2;
-            this.gunaLabel18.Text = "Historique :";
-            // 
-            // gunaCirclePictureBox5
-            // 
-            this.gunaCirclePictureBox5.BaseColor = System.Drawing.Color.White;
-            this.gunaCirclePictureBox5.Location = new System.Drawing.Point(11, 10);
-            this.gunaCirclePictureBox5.Name = "gunaCirclePictureBox5";
-            this.gunaCirclePictureBox5.Size = new System.Drawing.Size(80, 80);
-            this.gunaCirclePictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaCirclePictureBox5.TabIndex = 0;
-            this.gunaCirclePictureBox5.TabStop = false;
-            this.gunaCirclePictureBox5.UseTransfarantBackground = false;
-            // 
             // gunaCirclePictureBox1
             // 
             this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
@@ -1063,40 +1097,6 @@
             this.gunaCirclePictureBox1.TabIndex = 0;
             this.gunaCirclePictureBox1.TabStop = false;
             this.gunaCirclePictureBox1.UseTransfarantBackground = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(63, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 120);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
-            // gunaCirclePictureBox4
-            // 
-            this.gunaCirclePictureBox4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(204)))), ((int)(((byte)(223)))));
-            this.gunaCirclePictureBox4.Location = new System.Drawing.Point(18, 231);
-            this.gunaCirclePictureBox4.Name = "gunaCirclePictureBox4";
-            this.gunaCirclePictureBox4.Size = new System.Drawing.Size(15, 15);
-            this.gunaCirclePictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaCirclePictureBox4.TabIndex = 14;
-            this.gunaCirclePictureBox4.TabStop = false;
-            this.gunaCirclePictureBox4.UseTransfarantBackground = false;
-            this.gunaCirclePictureBox4.Visible = false;
-            // 
-            // gunaCirclePictureBox2
-            // 
-            this.gunaCirclePictureBox2.BackColor = System.Drawing.Color.White;
-            this.gunaCirclePictureBox2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(204)))), ((int)(((byte)(223)))));
-            this.gunaCirclePictureBox2.Location = new System.Drawing.Point(18, 182);
-            this.gunaCirclePictureBox2.Name = "gunaCirclePictureBox2";
-            this.gunaCirclePictureBox2.Size = new System.Drawing.Size(15, 15);
-            this.gunaCirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaCirclePictureBox2.TabIndex = 12;
-            this.gunaCirclePictureBox2.TabStop = false;
-            this.gunaCirclePictureBox2.UseTransfarantBackground = false;
             // 
             // FrmArtiste
             // 
@@ -1119,6 +1119,9 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.gunaLinePanel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).EndInit();
             this.gunaLinePanel5.ResumeLayout(false);
             this.gunaLinePanel1.ResumeLayout(false);
             this.pnlHome.ResumeLayout(false);
@@ -1136,6 +1139,7 @@
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.gunaLinePanel18.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox5)).EndInit();
             this.gunaLinePanel16.ResumeLayout(false);
             this.gunaLinePanel10.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
@@ -1143,11 +1147,7 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.gunaLinePanel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
