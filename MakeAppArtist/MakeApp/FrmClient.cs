@@ -161,6 +161,7 @@ namespace MakeApp
 
         private void gunaAdvenceButton3_Click(object sender, EventArgs e)
         {
+            timer1.Start();
             SqlCommand command = new SqlCommand("insert into RDV values('"+ gunaDateTimePicker1.Value + "', '"+ gunaTextBox1.Text.ToString()+ "' , '"+ richTextBox1.Text.ToString() + "', '"+C.user1.Mail+"', '"+ gunaComboBox1.SelectedValue + "', '"+ gunaComboBox2.SelectedItem.ToString() + "')", C.cn);
             C.cn.Open();
             command.ExecuteNonQuery();
