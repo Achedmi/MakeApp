@@ -55,8 +55,7 @@ namespace MakeApp
                 vScrollHelper2 = new Guna.UI.Lib.ScrollBar.PanelScrollHelper(panel7, gunaVScrollBar2, true);
 
 
-
-            //hda les boucles 7ta tzidhom f l function dual actualizer // hadou kaikhwiw les annonces w les historiques // ghir dir les requetes li lt7t w ghadi y3mro b data jdida
+            
                  for (int x = pnlHome.Controls.Count - 1; x >=2 ; x--)
                  {
                      pnlHome.Controls.RemoveAt(x);
@@ -106,12 +105,6 @@ namespace MakeApp
                 i += 2;
                 j += 2;
             }
-
-
-            
-            
-            
-
 
             cmd = new SqlCommand("select Top 1 Account.Nom + ' ' +Account.Prenom,DateRdv,Account.Tel from RDV inner join Account on Account.Mail = RDV.MailFrom order by DAteRdv desc  ", C.cn);
             dr.Close();

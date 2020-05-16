@@ -192,12 +192,16 @@ namespace MakeApp
 
         private void gunaTextBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            MessageBox.Show(e.KeyChar.ToString());
-            if ((char.IsControl(e.KeyChar) == false && char.IsDigit(e.KeyChar) == false) )
+            /*if ((char.IsControl(e.KeyChar) == false && char.IsDigit(e.KeyChar) == false) || e.KeyChar != ':')
             {                
-                e.Handled = true;
-            }
+                  e.Handled = true;
+            }*/
         }
 
+        private void gunaLabel2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Program.login.Show();
+        }
     }
 }

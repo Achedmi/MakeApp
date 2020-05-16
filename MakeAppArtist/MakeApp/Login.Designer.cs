@@ -64,7 +64,7 @@
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.gunaLabel2.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel2.Location = new System.Drawing.Point(44, 179);
+            this.gunaLabel2.Location = new System.Drawing.Point(44, 176);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(73, 15);
             this.gunaLabel2.TabIndex = 63;
@@ -75,7 +75,7 @@
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.gunaLabel1.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel1.Location = new System.Drawing.Point(44, 118);
+            this.gunaLabel1.Location = new System.Drawing.Point(44, 113);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(36, 15);
             this.gunaLabel1.TabIndex = 59;
@@ -91,7 +91,7 @@
             this.txtemail_p1.FocusedForeColor = System.Drawing.Color.White;
             this.txtemail_p1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtemail_p1.ForeColor = System.Drawing.Color.White;
-            this.txtemail_p1.Location = new System.Drawing.Point(47, 137);
+            this.txtemail_p1.Location = new System.Drawing.Point(47, 134);
             this.txtemail_p1.Name = "txtemail_p1";
             this.txtemail_p1.PasswordChar = '\0';
             this.txtemail_p1.Size = new System.Drawing.Size(260, 38);

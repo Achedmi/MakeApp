@@ -106,6 +106,7 @@
             this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.pnlHome = new System.Windows.Forms.Panel();
             this.gunaShadowPanel3 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
             this.gunaLabel31 = new Guna.UI.WinForms.GunaLabel();
             this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
             this.gunaLabel30 = new Guna.UI.WinForms.GunaLabel();
@@ -123,7 +124,6 @@
             this.gunaShadowPanel2 = new Guna.UI.WinForms.GunaShadowPanel();
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
             this.gunaLinePanel18.SuspendLayout();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox5)).BeginInit();
@@ -213,7 +213,7 @@
             this.lblNbrRdv.ForeColor = System.Drawing.Color.DarkGray;
             this.lblNbrRdv.Location = new System.Drawing.Point(111, 42);
             this.lblNbrRdv.Name = "lblNbrRdv";
-            this.lblNbrRdv.Size = new System.Drawing.Size(174, 15);
+            this.lblNbrRdv.Size = new System.Drawing.Size(172, 15);
             this.lblNbrRdv.TabIndex = 5;
             this.lblNbrRdv.Text = "Vous n\'avez aucun rendez vous";
             // 
@@ -444,7 +444,7 @@
             this.gunaLabel17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
             this.gunaLabel17.Location = new System.Drawing.Point(3, 15);
             this.gunaLabel17.Name = "gunaLabel17";
-            this.gunaLabel17.Size = new System.Drawing.Size(211, 21);
+            this.gunaLabel17.Size = new System.Drawing.Size(210, 21);
             this.gunaLabel17.TabIndex = 5;
             this.gunaLabel17.Text = "Vos prochain Rendez-vous :";
             // 
@@ -559,7 +559,7 @@
             this.gunaLabel27.ForeColor = System.Drawing.Color.DarkGray;
             this.gunaLabel27.Location = new System.Drawing.Point(111, 42);
             this.gunaLabel27.Name = "gunaLabel27";
-            this.gunaLabel27.Size = new System.Drawing.Size(174, 15);
+            this.gunaLabel27.Size = new System.Drawing.Size(172, 15);
             this.gunaLabel27.TabIndex = 5;
             this.gunaLabel27.Text = "Vous n\'avez aucun rendez vous";
             // 
@@ -644,7 +644,7 @@
             this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
             this.gunaLabel1.Location = new System.Drawing.Point(24, 8);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(175, 37);
+            this.gunaLabel1.Size = new System.Drawing.Size(173, 37);
             this.gunaLabel1.TabIndex = 0;
             this.gunaLabel1.Text = "Top Clients :";
             // 
@@ -752,7 +752,7 @@
             this.gunaLabel16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
             this.gunaLabel16.Location = new System.Drawing.Point(9, 100);
             this.gunaLabel16.Name = "gunaLabel16";
-            this.gunaLabel16.Size = new System.Drawing.Size(41, 21);
+            this.gunaLabel16.Size = new System.Drawing.Size(40, 21);
             this.gunaLabel16.TabIndex = 43;
             this.gunaLabel16.Text = "Tel :";
             // 
@@ -774,7 +774,7 @@
             this.gunaLabel14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
             this.gunaLabel14.Location = new System.Drawing.Point(9, 74);
             this.gunaLabel14.Name = "gunaLabel14";
-            this.gunaLabel14.Size = new System.Drawing.Size(149, 21);
+            this.gunaLabel14.Size = new System.Drawing.Size(148, 21);
             this.gunaLabel14.TabIndex = 41;
             this.gunaLabel14.Text = "Date RendezVouz:";
             // 
@@ -807,7 +807,7 @@
             this.gunaLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
             this.gunaLabel10.Location = new System.Drawing.Point(6, 7);
             this.gunaLabel10.Name = "gunaLabel10";
-            this.gunaLabel10.Size = new System.Drawing.Size(285, 37);
+            this.gunaLabel10.Size = new System.Drawing.Size(282, 37);
             this.gunaLabel10.TabIndex = 38;
             this.gunaLabel10.Text = "Dernier RendezVouz:";
             // 
@@ -935,6 +935,7 @@
             this.gunaLabel2.Size = new System.Drawing.Size(63, 20);
             this.gunaLabel2.TabIndex = 10;
             this.gunaLabel2.Text = "Log out";
+            this.gunaLabel2.Click += new System.EventHandler(this.gunaLabel2_Click);
             // 
             // gunaAdvenceButton2
             // 
@@ -1100,6 +1101,24 @@
             this.gunaShadowPanel3.Size = new System.Drawing.Size(989, 370);
             this.gunaShadowPanel3.TabIndex = 35;
             // 
+            // gunaComboBox1
+            // 
+            this.gunaComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaComboBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaComboBox1.BorderColor = System.Drawing.Color.Silver;
+            this.gunaComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.gunaComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gunaComboBox1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.gunaComboBox1.ForeColor = System.Drawing.Color.Black;
+            this.gunaComboBox1.FormattingEnabled = true;
+            this.gunaComboBox1.Location = new System.Drawing.Point(624, 87);
+            this.gunaComboBox1.Name = "gunaComboBox1";
+            this.gunaComboBox1.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.gunaComboBox1.Size = new System.Drawing.Size(208, 26);
+            this.gunaComboBox1.TabIndex = 36;
+            // 
             // gunaLabel31
             // 
             this.gunaLabel31.AutoSize = true;
@@ -1138,7 +1157,7 @@
             this.gunaLabel30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
             this.gunaLabel30.Location = new System.Drawing.Point(589, 305);
             this.gunaLabel30.Name = "gunaLabel30";
-            this.gunaLabel30.Size = new System.Drawing.Size(278, 21);
+            this.gunaLabel30.Size = new System.Drawing.Size(277, 21);
             this.gunaLabel30.TabIndex = 32;
             this.gunaLabel30.Text = "Votre commande a bien été valider";
             this.gunaLabel30.Visible = false;
@@ -1255,7 +1274,7 @@
             this.gunaLabel21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(44)))), ((int)(((byte)(81)))));
             this.gunaLabel21.Location = new System.Drawing.Point(497, 135);
             this.gunaLabel21.Name = "gunaLabel21";
-            this.gunaLabel21.Size = new System.Drawing.Size(245, 21);
+            this.gunaLabel21.Size = new System.Drawing.Size(244, 21);
             this.gunaLabel21.TabIndex = 26;
             this.gunaLabel21.Text = "Type de maquillage souhaiter :";
             // 
@@ -1334,24 +1353,6 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // gunaComboBox1
-            // 
-            this.gunaComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaComboBox1.BorderColor = System.Drawing.Color.Silver;
-            this.gunaComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox1.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox1.FormattingEnabled = true;
-            this.gunaComboBox1.Location = new System.Drawing.Point(624, 87);
-            this.gunaComboBox1.Name = "gunaComboBox1";
-            this.gunaComboBox1.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.gunaComboBox1.Size = new System.Drawing.Size(208, 26);
-            this.gunaComboBox1.TabIndex = 36;
             // 
             // FrmClient
             // 
