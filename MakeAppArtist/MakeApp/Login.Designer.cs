@@ -66,9 +66,9 @@
             this.gunaLabel2.ForeColor = System.Drawing.Color.White;
             this.gunaLabel2.Location = new System.Drawing.Point(44, 176);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(73, 15);
+            this.gunaLabel2.Size = new System.Drawing.Size(80, 15);
             this.gunaLabel2.TabIndex = 63;
-            this.gunaLabel2.Text = "Mot de Pass";
+            this.gunaLabel2.Text = "Mot de Passe";
             // 
             // gunaLabel1
             // 

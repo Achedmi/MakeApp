@@ -70,9 +70,7 @@ namespace MakeApp
 
         private void gunaAdvenceButton1_Click(object sender, EventArgs e)
         {
-
             SqlCommand cmd = new SqlCommand();
-
             if (C.cn.State == ConnectionState.Open)
             {
                 C.cn.Close();

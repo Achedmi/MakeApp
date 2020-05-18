@@ -54,7 +54,7 @@ namespace MakeApp
                  panel7.Controls.RemoveAt(x);
              }*/
 
-            SqlCommand cmd = new SqlCommand("select TOP 3 ([Client].Nom + ' ' + Client.Prenom)as Name,  COUNT(*)as Total from Choisie inner join RDV on RDV.idRdv = Choisie.idRdv inner join Client on RDV.MailFrom = Client.Mail where Choisie.Finished = 1  group by [Client].Nom + ' ' + Client.Prenom order by Total DESC", C.cn);
+            SqlCommand cmd = new SqlCommand("select TOP 3 (Account.Nom + ' ' + Account.Prenom)as Name,  COUNT(*)as Total from Choisie inner join RDV on RDV.idRdv = Choisie.idRdv inner join Account on RDV.MailFrom = Account.Mail where Choisie.Finished = 1  group by Account.Nom + ' ' + Account.Prenom order by Total DESC", C.cn);
             if (C.cn.State == ConnectionState.Open)
             {
                 C.cn.Close();

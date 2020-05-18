@@ -21,10 +21,10 @@ namespace MakeApp
 
         private void btnConnexion_Click(object sender, EventArgs e)
         {
-            Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+            Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");//gmail@gmail.com
             if (regex.IsMatch(txtemail_p1.Text) == false)
             {                
-                MessageBox.Show("la form de l'adresse Email est incorrect");
+                MessageBox.Show("la forme de l'adresse Email est incorrect");
                 return;
             }
 
@@ -32,7 +32,7 @@ namespace MakeApp
             //notif de mot de passe
             if (txtpaas_p1.Text == "Mot de passe" && txtpaas_p1.UseSystemPasswordChar == false)
             {
-                MessageBox.Show("la form de l'adresse Email est incorrect");
+                MessageBox.Show("la forme de l'adresse Email est incorrect");
                 return;
             }
 
@@ -51,13 +51,17 @@ namespace MakeApp
             {
                 if (dr[2].ToString() == txtemail_p1.Text && dr[4].ToString() == txtpaas_p1.Text)
                 {
-
-
                     C.user1.setdata(dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), Convert.ToInt32(dr[3].ToString()), dr[4].ToString(), Convert.ToInt16(dr[6].ToString()));
                     if (C.user1.Type == 1)//Type = [0, 1, 2] // 0 = Admin; 1 = Artiste; 2 = Client;
+                    {
+                        dr.Close();
                         C.frmAr.Show();
+                    }
                     else if (C.user1.Type == 2)
+                    {
+                        dr.Close();
                         C.FrmClient.Show();
+                    }
                     else
                         C.frmadmin.Show();
 

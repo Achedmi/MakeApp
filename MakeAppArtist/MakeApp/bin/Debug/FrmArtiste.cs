@@ -141,18 +141,8 @@ namespace MakeApp
 
                 pnlHome.Controls.Add(rdv);
             }
-            
-
-
-
-
+           
             C.cn.Close();
-
-
-
-
-
-
             //profile
             lblPrenom.Text = C.user1.Prenom;
             lblMail.Text = C.user1.Mail;

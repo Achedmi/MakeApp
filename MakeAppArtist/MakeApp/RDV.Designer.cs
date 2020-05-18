@@ -186,7 +186,7 @@
             this.Controls.Add(this.gunaPanel1);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "RDV";
-            this.Size = new System.Drawing.Size(832, 200);
+            this.Size = new System.Drawing.Size(832, 174);
             this.gunaPanel1.ResumeLayout(false);
             this.gunaPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).EndInit();
